@@ -1876,7 +1876,7 @@
 					"file": "/home/chriz/.config/.gitignore",
 					"settings":
 					{
-						"buffer_size": 1888,
+						"buffer_size": 1883,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					},
@@ -5933,6 +5933,38 @@
 							},
 							"CQAAAFcHAAAAAAAAWAcAAAAAAAAAAAAAWAcAAAAAAABZBwAAAAAAAAAAAABZBwAAAAAAAFoHAAAAAAAAAAAAAFoHAAAAAAAAWwcAAAAAAAAAAAAAWwcAAAAAAABcBwAAAAAAAAAAAABcBwAAAAAAAF0HAAAAAAAAAAAAAF0HAAAAAAAAXgcAAAAAAAAAAAAAXgcAAAAAAABfBwAAAAAAAAAAAABfBwAAAAAAAGAHAAAAAAAAAAAAAA",
 							"AQAAAAAAAAABAAAAVwcAAAAAAABXBwAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							443,
+							1,
+							"left_delete",
+							null,
+							"AQAAAAQFAAAAAAAABAUAAAAAAAABAAAAbA",
+							"AQAAAAAAAAABAAAABQUAAAAAAAAFBQAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							448,
+							1,
+							"left_delete",
+							null,
+							"AQAAABYFAAAAAAAAFgUAAAAAAAABAAAAbA",
+							"AQAAAAAAAAABAAAAFwUAAAAAAAAXBQAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							453,
+							1,
+							"left_delete",
+							null,
+							"AQAAAIwFAAAAAAAAjAUAAAAAAAABAAAAcg",
+							"AQAAAAAAAAABAAAAjQUAAAAAAACNBQAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							464,
+							2,
+							"left_delete",
+							null,
+							"AgAAAOYFAAAAAAAA5gUAAAAAAAABAAAAZeUFAAAAAAAA5QUAAAAAAAABAAAAZA",
+							"AQAAAAAAAAABAAAA5wUAAAAAAADnBQAAAAAAAAAAAAAAAPC/"
 						]
 					]
 				}
@@ -6244,15 +6276,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1888,
+								"buffer_size": 1883,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1888,
-										1888
+										1509,
+										1509
 									]
 								],
 								"settings":
@@ -6260,7 +6292,7 @@
 									"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
 								},
 								"translation.x": 0.0,
-								"translation.y": 2429.0,
+								"translation.y": 2237.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
