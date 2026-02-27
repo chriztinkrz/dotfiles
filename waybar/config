@@ -72,8 +72,8 @@
         "on-click": "foot btop",
         "on-scroll-up": "niri msg action focus-workspace-up",
         "on-scroll-down": "niri msg action focus-workspace-down",
-        "max-length": 6,
-        "max-length": 6
+        "min-length": 5,
+        "max-length": 5
     },
 
     "clock": {
