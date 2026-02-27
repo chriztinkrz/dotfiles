@@ -1,1 +1,0 @@
-{AMD/AMD Radeon Graphics (radeonsi, renoir, ACO, DRM 3.64, 6.17.9-arch1-1)/4.6 (Core Profile) Mesa 25.2.7-cachyos1.2}=SUPPORTED

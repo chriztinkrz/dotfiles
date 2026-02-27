@@ -1,6 +1,0 @@
-[Libinput][7511][4880][2.4G Wireless Receiver   Mouse]
-PointerAcceleration=-0.200
-PointerAccelerationProfile=1
-
-[Mouse]
-X11LibInputXAccelProfileFlat=true

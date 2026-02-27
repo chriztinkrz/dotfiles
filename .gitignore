@@ -1,9 +1,0 @@
-# Ignore app caches and junk
-**/Code Cache/
-**/Cache/
-**/GPUCache/
-**/*.log
-**/Cookies*
-**/Session Storage/
-**/IndexedDB/
-whatsdesk/
