@@ -1,0 +1,6 @@
+[Unit]
+Description=Quit Nautilus if no windows open
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/quit-nautilus-if-idle.sh

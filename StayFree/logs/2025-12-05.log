@@ -1,0 +1,156 @@
+2025-12-05 18:07:22 [verbose]: Opening sqlite database: /home/chriz/.config/StayFree/config.db  
+2025-12-05 18:07:22 [verbose]: Opening sqlite database: /home/chriz/.config/StayFree/usage.db  
+2025-12-05 18:07:22 [verbose]: Opening sqlite database: /home/chriz/.config/StayFree/preferences.db  
+2025-12-05 18:07:22 [verbose]: App Version:  2.7.8
+2025-12-05 18:07:22 [verbose]: App ID:  com.stayfree.desktop.linux
+2025-12-05 18:07:22 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T14:07:22.414Z  
+2025-12-05 18:07:22 [verbose]: Configuring system to run StayFree on startup...  
+2025-12-05 18:07:22 [verbose]: Setting up login item...  
+2025-12-05 18:07:22 [info]: Will send notification at 0 0 21 * * *  
+2025-12-05 18:07:22 [info]: LOTG Sessions will be cleaned up at 0 0 3 * * *  
+2025-12-05 18:07:22 [info]: Checking for update: app ready  
+2025-12-05 18:07:22 [info]: Checking for update  
+2025-12-05 18:07:22 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.103s  
+2025-12-05 18:07:22 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.103,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"184","session_id":"1764943642334"}}]}}
+2025-12-05 18:07:22 [info]: {"--no-gui":false,"wasSilentUpdate":false}  
+2025-12-05 18:07:22 [verbose]: Skipping update check (dashboard shown)  
+2025-12-05 18:07:23 [verbose]: Skipping update check (dashboard shown)  
+2025-12-05 18:07:24 [info]: Found version 3.2.22 (url: stayfree-linux-x86_64.AppImage, stayfree-linux-amd64.deb)  
+2025-12-05 18:07:24 [info]: Downloading update from stayfree-linux-x86_64.AppImage, stayfree-linux-amd64.deb  
+2025-12-05 18:07:24 [info]: Cached update sha512 checksum doesn't match the latest available update. New update must be downloaded. Cached: GRo1+NozHHsfGySPnGGnf08tqaHn768x3C5eZxIA1ZLYvaDbQ95l62G/XTJR+rrM7KWrRWWxq4ra0Sws5Rh2lA==, expected: ShfyYoBbiqv4wLij9ErLJEf9nJUjDfW/u6WoSdnqD3VlpBIGJmj2kg7Y3RBkRLsu4WeSU+X317MkOxKET7/VWA==. Directory for cached update will be cleaned  
+2025-12-05 18:07:34 [info]: New version 3.2.22 has been downloaded to /home/chriz/.cache/stayfree-desktop-updater/pending/stayfree-linux-amd64.deb  
+2025-12-05 18:07:34 [info]: Update downloaded  
+2025-12-05 18:07:40 [info]: Performing update  {"silent":false}
+2025-12-05 18:07:40 [info]: Stopped all tasks  
+2025-12-05 18:07:40 [info]: Install on explicit quitAndInstall  
+2025-12-05 18:07:40 [info]: Install: isSilent: true, isForceRunAfter: true  
+2025-12-05 18:07:40 [info]: Executing: which gksudo || which kdesudo || which pkexec || which beesu with args:   
+2025-12-05 18:07:40 [error]: Error: TypeError: Cannot read properties of null (reading 'trim')
+    at DebUpdater.spawnSyncLog (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:113:32)
+    at DebUpdater.wrapSudo (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:91:27)
+    at DebUpdater.doInstall (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/DebUpdater.js:28:27)
+    at DebUpdater.install (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:54:25)
+    at DebUpdater.quitAndInstall (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:15:34)
+    at c (file:///opt/StayFree/resources/app.asar/out/index.js:30441:293)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)  
+2025-12-05 18:07:40 [error]: Cannot read properties of null (reading 'trim')  TypeError: Cannot read properties of null (reading 'trim')
+    at DebUpdater.spawnSyncLog (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:113:32)
+    at DebUpdater.wrapSudo (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:91:27)
+    at DebUpdater.doInstall (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/DebUpdater.js:28:27)
+    at DebUpdater.install (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:54:25)
+    at DebUpdater.quitAndInstall (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:15:34)
+    at c (file:///opt/StayFree/resources/app.asar/out/index.js:30441:293)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-12-05 18:07:40 [info]: Quitting and installing update  
+2025-12-05 18:08:26 [verbose]: Opening deep link:  --allow-file-access-from-files
+2025-12-05 18:08:26 [warn]: Invalid deep link: --allow-file-access-from-files  
+2025-12-05 18:08:26 [verbose]: Skipping update check (dashboard shown)  
+2025-12-05 18:08:26 [verbose]: Skipping update check (dashboard shown)  
+2025-12-05 18:51:02 [verbose]: Opening deep link:  --allow-file-access-from-files
+2025-12-05 18:51:02 [warn]: Invalid deep link: --allow-file-access-from-files  
+2025-12-05 18:51:02 [verbose]: Skipping update check (dashboard shown)  
+2025-12-05 18:51:02 [verbose]: Skipping update check (dashboard shown)  
+2025-12-05 19:14:38 [info]: before-quit  
+2025-12-05 21:17:15 [verbose]: Opening sqlite database: /home/chriz/.config/StayFree/config.db  
+2025-12-05 21:17:15 [verbose]: Opening sqlite database: /home/chriz/.config/StayFree/usage.db  
+2025-12-05 21:17:15 [verbose]: Opening sqlite database: /home/chriz/.config/StayFree/preferences.db  
+2025-12-05 21:17:15 [verbose]: App Version:  2.7.8
+2025-12-05 21:17:15 [verbose]: App ID:  com.stayfree.desktop.linux
+2025-12-05 21:17:15 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T17:17:15.469Z  
+2025-12-05 21:17:15 [verbose]: Configuring system to run StayFree on startup...  
+2025-12-05 21:17:15 [verbose]: Setting up login item...  
+2025-12-05 21:17:15 [info]: Will send notification at 0 0 21 * * *  
+2025-12-05 21:17:15 [info]: LOTG Sessions will be cleaned up at 0 0 3 * * *  
+2025-12-05 21:17:15 [verbose]: Skipping update check (app ready)  
+2025-12-05 21:17:15 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.097s  
+2025-12-05 21:17:15 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.097,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"232","session_id":"1764955035339"}}]}}
+2025-12-05 21:17:16 [info]: {"--no-gui":false,"wasSilentUpdate":false}  
+2025-12-05 21:17:16 [verbose]: Skipping update check (dashboard shown)  
+2025-12-05 21:17:16 [verbose]: Skipping update check (dashboard shown)  
+2025-12-05 21:22:15 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T17:22:15.470Z  
+2025-12-05 21:22:15 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.005s  
+2025-12-05 21:22:15 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.005,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"300136","session_id":"1764955035339"}}]}}
+2025-12-05 21:24:58 [info]: before-quit  
+2025-12-05 21:25:00 [verbose]: [Google Analytics] Reporting event to measurement protocol: QUIT_DIALOG_EXITED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"quit_dialog_exited","params":{"platform":"linux","page":"undefined.html","debug_mode":0,"engagement_time_msec":"465420","session_id":"1764955035339"}}]}}
+2025-12-05 21:25:00 [info]: quit  
+2025-12-05 21:25:00 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T17:25:00.765Z  
+2025-12-05 21:25:00 [error]: [desktop-uploader] Failed to upload aborted  {} 
+2025-12-05 21:32:26 [verbose]: Opening sqlite database: /home/chriz/.config/StayFree/config.db  
+2025-12-05 21:32:26 [verbose]: Opening sqlite database: /home/chriz/.config/StayFree/usage.db  
+2025-12-05 21:32:26 [verbose]: Opening sqlite database: /home/chriz/.config/StayFree/preferences.db  
+2025-12-05 21:32:26 [verbose]: App Version:  2.7.8
+2025-12-05 21:32:26 [verbose]: App ID:  com.stayfree.desktop.linux
+2025-12-05 21:32:26 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T17:32:26.798Z  
+2025-12-05 21:32:26 [verbose]: Configuring system to run StayFree on startup...  
+2025-12-05 21:32:26 [verbose]: Setting up login item...  
+2025-12-05 21:32:26 [info]: Will send notification at 0 0 21 * * *  
+2025-12-05 21:32:26 [info]: LOTG Sessions will be cleaned up at 0 0 3 * * *  
+2025-12-05 21:32:26 [verbose]: Skipping update check (app ready)  
+2025-12-05 21:32:26 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.082s  
+2025-12-05 21:32:26 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.082,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"158","session_id":"1764955946724"}}]}}
+2025-12-05 21:32:27 [info]: {"--no-gui":false,"wasSilentUpdate":false}  
+2025-12-05 21:32:27 [verbose]: Skipping update check (dashboard shown)  
+2025-12-05 21:32:28 [verbose]: Skipping update check (dashboard shown)  
+2025-12-05 21:37:26 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T17:37:26.799Z  
+2025-12-05 21:37:26 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.013s  
+2025-12-05 21:37:26 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.013,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"300089","session_id":"1764955946724"}}]}}
+2025-12-05 21:42:26 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T17:42:26.800Z  
+2025-12-05 21:42:26 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.005s  
+2025-12-05 21:42:26 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.005,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"600082","session_id":"1764955946724"}}]}}
+2025-12-05 21:47:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T17:47:27.271Z  
+2025-12-05 21:47:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.331s  
+2025-12-05 21:47:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.331,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"900904","session_id":"1764955946724"}}]}}
+2025-12-05 21:52:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T17:52:27.271Z  
+2025-12-05 21:52:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.004s  
+2025-12-05 21:52:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.004,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"1200551","session_id":"1764955946724"}}]}}
+2025-12-05 21:57:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T17:57:27.271Z  
+2025-12-05 21:57:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.005s  
+2025-12-05 21:57:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.005,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"1500552","session_id":"1764955946724"}}]}}
+2025-12-05 22:02:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T18:02:27.272Z  
+2025-12-05 22:02:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.006s  
+2025-12-05 22:02:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.006,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"1800554","session_id":"1764955946724"}}]}}
+2025-12-05 22:07:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T18:07:27.272Z  
+2025-12-05 22:07:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.004s  
+2025-12-05 22:07:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.004,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"2100553","session_id":"1764955946724"}}]}}
+2025-12-05 22:12:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T18:12:27.273Z  
+2025-12-05 22:12:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.004s  
+2025-12-05 22:12:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.004,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"2400553","session_id":"1764955946724"}}]}}
+2025-12-05 22:12:34 [info]: window-all-closed  
+2025-12-05 22:17:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T18:17:27.274Z  
+2025-12-05 22:17:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.004s  
+2025-12-05 22:17:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.004,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"2700554","session_id":"1764955946724"}}]}}
+2025-12-05 22:22:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T18:22:27.274Z  
+2025-12-05 22:22:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.004s  
+2025-12-05 22:22:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.004,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"3000554","session_id":"1764955946724"}}]}}
+2025-12-05 22:27:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T18:27:27.275Z  
+2025-12-05 22:27:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.004s  
+2025-12-05 22:27:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.004,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"3300555","session_id":"1764955946724"}}]}}
+2025-12-05 22:32:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T18:32:27.275Z  
+2025-12-05 22:32:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.004s  
+2025-12-05 22:32:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.004,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"3600555","session_id":"1764955946724"}}]}}
+2025-12-05 22:37:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T18:37:27.275Z  
+2025-12-05 22:37:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.004s  
+2025-12-05 22:37:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.004,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"3900555","session_id":"1764955946724"}}]}}
+2025-12-05 22:42:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T18:42:27.276Z  
+2025-12-05 22:42:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.004s  
+2025-12-05 22:42:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.004,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"4200556","session_id":"1764955946724"}}]}}
+2025-12-05 22:47:16 [verbose]: Opening deep link:  --allow-file-access-from-files
+2025-12-05 22:47:16 [warn]: Invalid deep link: --allow-file-access-from-files  
+2025-12-05 22:47:16 [verbose]: Skipping update check (dashboard shown)  
+2025-12-05 22:47:16 [verbose]: Skipping update check (dashboard shown)  
+2025-12-05 22:47:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T18:47:27.277Z  
+2025-12-05 22:47:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.004s  
+2025-12-05 22:47:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.004,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"4500558","session_id":"1764955946724"}}]}}
+2025-12-05 22:52:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T18:52:27.277Z  
+2025-12-05 22:52:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.006s  
+2025-12-05 22:52:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.006,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"4800560","session_id":"1764955946724"}}]}}
+2025-12-05 22:57:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T18:57:27.278Z  
+2025-12-05 22:57:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.004s  
+2025-12-05 22:57:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.004,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"5100558","session_id":"1764955946724"}}]}}
+2025-12-05 23:02:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T19:02:27.278Z  
+2025-12-05 23:02:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.006s  
+2025-12-05 23:02:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.006,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"5400560","session_id":"1764955946724"}}]}}
+2025-12-05 23:07:27 [verbose]: [desktop-uploader] Beginning upload @ 2025-12-05T19:07:27.278Z  
+2025-12-05 23:07:27 [verbose]: [desktop-uploader] Uploaded 0 items in 0 batches in 0.005s  
+2025-12-05 23:07:27 [verbose]: [Google Analytics] Reporting event to measurement protocol: DESKTOP_USAGE_UPLOAD_COMPLETED  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"desktop_usage_upload_completed","params":{"platform":"linux","total":0,"batches":0,"batchSize":100,"durationInSec":0.005,"page":"undefined.html","debug_mode":0,"engagement_time_msec":"5700559","session_id":"1764955946724"}}]}}
+2025-12-05 23:07:32 [info]: before-quit  

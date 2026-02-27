@@ -1,0 +1,9 @@
+[Unit]
+Description=Run nautilus cleanup every second
+
+[Timer]
+OnBootSec=5sec
+OnUnitActiveSec=1sec
+
+[Install]
+WantedBy=timers.target

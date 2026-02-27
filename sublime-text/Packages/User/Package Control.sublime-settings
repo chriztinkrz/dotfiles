@@ -1,0 +1,11 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"Nix",
+		"Package Control",
+	],
+	"in_process_packages":
+	[
+	],
+}

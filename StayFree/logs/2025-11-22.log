@@ -1,0 +1,86 @@
+2025-11-22 13:00:36 [info]: [sqlite] Running migration: createConfigTable  
+2025-11-22 13:00:36 [info]: [sqlite] Running migration: createSessionsTable  
+2025-11-22 13:00:36 [info]: [sqlite] Running migration: createUsageLimitExtensionsTable  
+2025-11-22 13:00:36 [verbose]: Opening sqlite database: /home/chriz/.config/StayFree/config.db  
+2025-11-22 13:00:36 [info]: [sqlite] Running migration: deleteInvalidSessions  
+2025-11-22 13:00:36 [info]: [sqlite] Running migration: createInstallAppsTable  
+2025-11-22 13:00:36 [info]: [sqlite] Running migration: addLastUsedAtToInstalledApps  
+2025-11-22 13:00:36 [verbose]: Opening sqlite database: /home/chriz/.config/StayFree/usage.db  
+2025-11-22 13:00:36 [info]: [sqlite] Running migration: createLotgTable  
+2025-11-22 13:00:36 [info]: [sqlite] Running migration: createLotgCoolDownTable  
+2025-11-22 13:00:36 [verbose]: Opening sqlite database: /home/chriz/.config/StayFree/preferences.db  
+2025-11-22 13:00:36 [verbose]: App Version:  2.7.8
+2025-11-22 13:00:36 [verbose]: App ID:  com.stayfree.desktop.linux
+2025-11-22 13:00:36 [verbose]: [desktop-uploader] Beginning upload @ 2025-11-22T09:00:36.393Z  
+2025-11-22 13:00:36 [verbose]: Configuring system to run StayFree on startup...  
+2025-11-22 13:00:36 [verbose]: Setting up login item...  
+2025-11-22 13:00:36 [verbose]: [desktop-uploader] Uploads are disabled  
+2025-11-22 13:00:36 [info]: Will send notification at 0 0 21 * * *  
+2025-11-22 13:00:36 [info]: LOTG Sessions will be cleaned up at 0 0 3 * * *  
+2025-11-22 13:00:36 [info]: Checking for update: app ready  
+2025-11-22 13:00:36 [info]: Checking for update  
+2025-11-22 13:00:36 [verbose]: [Google Analytics] Reporting event to measurement protocol: FIRST_TIME  {"body":{"client_id":"42rqjve9ypuwk","user_id":"42rqjve9ypuwk","non_personalized_ads":true,"user_properties":{"version":{"value":"2.7.8"},"mode":{"value":"production"}},"events":[{"name":"first_time","params":{"platform":"linux","page":"undefined.html","debug_mode":0,"engagement_time_msec":"160","session_id":"1763802036292"}}]}}
+2025-11-22 13:00:36 [info]: Generated new staging user ID: 72a702da-f4e5-517a-ab9d-c56dc60e6841  
+2025-11-22 13:00:38 [info]: Found version 3.2.18 (url: stayfree-linux-x86_64.AppImage, stayfree-linux-amd64.deb)  
+2025-11-22 13:00:38 [info]: Downloading update from stayfree-linux-x86_64.AppImage, stayfree-linux-amd64.deb  
+2025-11-22 13:00:38 [info]: {"--no-gui":false,"wasSilentUpdate":null}  
+2025-11-22 13:00:38 [verbose]: Skipping update check (onboarding shown)  
+2025-11-22 13:00:39 [verbose]: Skipping update check (onboarding shown)  
+2025-11-22 13:00:48 [info]: New version 3.2.18 has been downloaded to /home/chriz/.cache/stayfree-desktop-updater/pending/stayfree-linux-amd64.deb  
+2025-11-22 13:00:48 [info]: Update downloaded  
+2025-11-22 13:00:50 [info]: Performing update  {"silent":false}
+2025-11-22 13:00:50 [info]: Stopped all tasks  
+2025-11-22 13:00:50 [info]: Install on explicit quitAndInstall  
+2025-11-22 13:00:50 [info]: Install: isSilent: true, isForceRunAfter: true  
+2025-11-22 13:00:50 [info]: Executing: which gksudo || which kdesudo || which pkexec || which beesu with args:   
+2025-11-22 13:00:50 [error]: Error: TypeError: Cannot read properties of null (reading 'trim')
+    at DebUpdater.spawnSyncLog (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:113:32)
+    at DebUpdater.wrapSudo (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:91:27)
+    at DebUpdater.doInstall (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/DebUpdater.js:28:27)
+    at DebUpdater.install (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:54:25)
+    at DebUpdater.quitAndInstall (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:15:34)
+    at c (file:///opt/StayFree/resources/app.asar/out/index.js:30441:293)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)  
+2025-11-22 13:00:50 [error]: Cannot read properties of null (reading 'trim')  TypeError: Cannot read properties of null (reading 'trim')
+    at DebUpdater.spawnSyncLog (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:113:32)
+    at DebUpdater.wrapSudo (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:91:27)
+    at DebUpdater.doInstall (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/DebUpdater.js:28:27)
+    at DebUpdater.install (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:54:25)
+    at DebUpdater.quitAndInstall (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:15:34)
+    at c (file:///opt/StayFree/resources/app.asar/out/index.js:30441:293)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-11-22 13:00:50 [info]: Quitting and installing update  
+2025-11-22 13:00:58 [verbose]: Opening deep link:  --ozone-platform=wayland
+2025-11-22 13:00:58 [warn]: Invalid deep link: --ozone-platform=wayland  
+2025-11-22 13:00:58 [verbose]: Skipping update check (dashboard shown)  
+2025-11-22 13:00:58 [verbose]: Skipping update check (dashboard shown)  
+2025-11-22 13:28:48 [verbose]: Opening deep link:  --ozone-platform=wayland
+2025-11-22 13:28:48 [warn]: Invalid deep link: --ozone-platform=wayland  
+2025-11-22 13:28:48 [verbose]: Skipping update check (dashboard shown)  
+2025-11-22 13:28:48 [verbose]: Skipping update check (dashboard shown)  
+2025-11-22 15:44:12 [info]: before-quit  
+2025-11-22 15:44:12 [info]: will-quit  
+2025-11-22 15:44:12 [info]: quit  
+2025-11-22 15:44:12 [verbose]: [desktop-uploader] Beginning upload @ 2025-11-22T11:44:12.269Z  
+2025-11-22 15:44:12 [info]: Auto install update on quit  
+2025-11-22 15:44:12 [info]: Install: isSilent: true, isForceRunAfter: false  
+2025-11-22 15:44:12 [info]: Executing: which gksudo || which kdesudo || which pkexec || which beesu with args:   
+2025-11-22 15:44:12 [error]: Error: TypeError: Cannot read properties of null (reading 'trim')
+    at DebUpdater.spawnSyncLog (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:113:32)
+    at DebUpdater.wrapSudo (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:91:27)
+    at DebUpdater.doInstall (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/DebUpdater.js:28:27)
+    at DebUpdater.install (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:54:25)
+    at /opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:85:18
+    at App.<anonymous> (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/ElectronAppAdapter.js:35:48)
+    at Object.onceWrapper (node:events:634:26)
+    at App.emit (node:events:531:35)  
+2025-11-22 15:44:12 [error]: Cannot read properties of null (reading 'trim')  TypeError: Cannot read properties of null (reading 'trim')
+    at DebUpdater.spawnSyncLog (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:113:32)
+    at DebUpdater.wrapSudo (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:91:27)
+    at DebUpdater.doInstall (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/DebUpdater.js:28:27)
+    at DebUpdater.install (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:54:25)
+    at /opt/StayFree/resources/app.asar/node_modules/electron-updater/out/BaseUpdater.js:85:18
+    at App.<anonymous> (/opt/StayFree/resources/app.asar/node_modules/electron-updater/out/ElectronAppAdapter.js:35:48)
+    at Object.onceWrapper (node:events:634:26)
+    at App.emit (node:events:531:35)
+2025-11-22 15:44:12 [error]: [desktop-uploader] Failed to upload aborted  {} 

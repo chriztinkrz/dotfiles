@@ -1,0 +1,20 @@
+host: cachyos-eb845g8
+description: rosu's laptop running cachyos with niri installed 19 november.
+import: []
+enabled_modules:
+- declared-packages
+packages: []
+exclude: []
+additional_packages: []
+backup_tool: timeshift
+snapper_config: root
+flatpak_scope: user
+auto_prune: false
+config_backups:
+  enabled: true
+  max_backups: 3
+services:
+  enabled: []
+  disabled: []
+editor: null
+aur_helper: yay

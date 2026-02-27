@@ -1,0 +1,229 @@
+{
+	"folder_history":
+	[
+	],
+	"last_version": 3211,
+	"last_window_id": 1,
+	"log_indexing": false,
+	"settings":
+	{
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "// Niri configuration for CachyOS\n// For documentation and full reference, see: https://github.com/YaLTeR/niri/wiki\n\nprefer-no-csd\n\n//  Input Configuration //\ninput {\n    keyboard {\n        xkb {\n            layout \"us\"; // Use the US keyboard layout\n        };\n        numlock; // Enable numlock on startup\n};\n    mouse {\n    \taccel-speed -0.15\n    \taccel-profile \"flat\"\n    }\n    touchpad {\n        accel-speed 0.25\n        accel-profile \"flat\";\n        tap; // Enable tap-to-click\n        natural-scroll; // Enable natural (macOS-style) scrolling\n        scroll-factor 0.35\n    };\n\n    focus-follows-mouse max-scroll-amount=\"18%\"; // Automatically focus windows under the mouse pointer\n    workspace-auto-back-and-forth; // Enable workspace back & forth switching\n};\n\ngestures {\n  hot-corners {\n  off\n  }\n  dnd-edge-view-scroll {\n        trigger-width 100\n        max-speed 2000\n        delay-ms 100\n    }\n}\n\n//  Output Configuration //\n\noutput \"HDMI-A-1\" {\n    mode \"3840x2160@60.000\"; // Set resolution and refresh rate\n    scale 1.56; // No scaling (use 2 for HiDPI) // 1.375 for extremely close //\n    focus-at-startup\n}\noutput \"eDP-1\" {\n    mode \"1920x1080@60.002\";\n    scale 0.95;\n}\n\n//  Keybindings //\n\nbinds {\n  \n    // general stuff //\n\n    SUPER+F5 { spawn-sh \"qs -c noctalia-shell ipc call plugin:screen-recorder toggle\"; };\n    SUPER+N { spawn-sh \"qs -c noctalia-shell ipc call notifications dismissAll\"; };\n    SUPER+GRAVE { spawn-sh \"qs -c noctalia-shell ipc call wallpaper toggle\"; };\n    SUPER+I hotkey-overlay-title=\"noctalia-settings\" { spawn-sh \"qs -c noctalia-shell ipc call settings toggle\"; };\n    SUPER+ALT+V hotkey-overlay-title=\"noctalia-clipboard\" { spawn-sh \"qs -c noctalia-shell ipc call launcher emoji\"; };  \n    SHIFT+ALT+V hotkey-overlay-title=\"noctalia-emoji_picker\" { spawn \"qs -c noctalia-shell ipc call launcher emoji\"; };\n    SUPER+SHIFT+ESCAPE { show-hotkey-overlay; };\n    SUPER+Escape hotkey-overlay-title=\"noctalia-power-menu\" { spawn-sh \"qs -c noctalia-shell ipc call sessionMenu toggle\"; };\n    // SUPER+L hotkey-overlay-title=\"lock\" { spawn-sh \"cd /usr/share/sddm/themes/silent && ./test.sh\"; }; \n    // SUPER+ALT+V hotkey-overlay-title=\"clipboard\" { spawn \"bash\" \"-c\" \"cliphist list | fuzzel -w 120 --dmenu | cliphist decode | wl-copy -p; wl-paste -p --no-newline | xclip\"; } // \n    SUPER+L allow-when-locked=true hotkey-overlay-title=\"Lock Screen: noctalia-lock\" { spawn-sh \"qs -c noctalia-shell ipc call lockScreen lock\"; };\n\n    // brightness controls //\n\n    SHIFT+F2 allow-when-locked=true hotkey-overlay-title=\"increase_brightness\" { spawn-sh \"brightnessctl s +5%\" ; };\n    SHIFT+F1 allow-when-locked=true hotkey-overlay-title=\"decrease_brightness\" { spawn-sh \"brightnessctl s 5%-\" ; };\n\n    // Applications //\n  \n    SUPER+RETURN hotkey-overlay-title=\"Open Terminal: foot\" { spawn-sh \"foot\"; };\n    SUPER+SPACE hotkey-overlay-title=\"Open App Launcher: noctalia-app_launcher\" { spawn-sh \"rofi -show drun\"; };\n    SUPER+B hotkey-overlay-title=\"Open Browser: zen\" { spawn-sh \"zen-browser\"; };\n    SUPER+V hotkey-overlay-title=\"noctalia-clipboard\" { spawn-sh \"qs -c noctalia-shell ipc call launcher clipboard\"; };\n    SUPER+E hotkey-overlay-title=\"File Manager: nautilus\" { spawn-sh \"nautilus --new-window\"; };\n\n    // Audio Controls //\n\n    ALT+F2 allow-when-locked=true { spawn-sh \"wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+\"; };\n    ALT+F1 allow-when-locked=true { spawn-sh \"wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-\"; };\n    ALT+F3 allow-when-locked=true { spawn-sh \"wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle\"; };\n    XF86AudioMicMute allow-when-locked=true { spawn-sh \"wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle\"; };\n    F1 allow-when-locked=true { spawn-sh \"playerctl previous\"; };\n    F2 allow-when-locked=true { spawn-sh \"playerctl play-pause\"; };\n    F3 allow-when-locked=true { spawn-sh \"playerctl next\"; };\n\n    // Window Movement and Focus //\n\n    CTRL+SHIFT+Z { close-window; };\n    SUPER+CTRL+SHIFT+Q { consume-window-into-column; };\n    SUPER+CTRL+SHIFT+W { expel-window-from-column; };\n    SUPER+SHIFT+X { switch-focus-between-floating-and-tiling;};\n  \n    // SUPER+LEFT { focus-column-left; };\n    ALT+A { focus-column-left; };\n    // SUPER+RIGHT { focus-column-right; };\n    ALT+D { focus-column-right; };\n    // SUPER+UP { focus-window-up; };\n    ALT+W { focus-window-up; };\n    // SUPER+DOWN { focus-window-down; };\n    ALT+S { focus-window-down; };\n\n    SUPER+SHIFT+LEFT { move-column-left; };\n    CTRL+SHIFT+A { move-column-left; };\n    SUPER+SHIFT+RIGHT { move-column-right; };\n    CTRL+SHIFT+D { move-column-right; };\n    SUPER+SHIFT+UP { move-window-up; };\n    CTRL+SHIFT+W { move-window-up; };\n    SUPER+SHIFT+DOWN { move-window-down; };\n    CTRL+SHIFT+S { move-window-down; };\n\n    SUPER+A { focus-column-first; };\n    SUPER+D { focus-column-last; };\n    SUPER+ALT+A { move-column-to-first; };\n    SUPER+ALT+D { move-column-to-last; };\n  \n    SUPER+CTRL+SHIFT+X { maximize-column; };\n    SUPER+CTRL+SHIFT+Z { switch-preset-column-width; };\n\n    // Workspace Switching //\n\n    SUPER+S { focus-workspace-down; };\n    SUPER+W { focus-workspace-up; };\n    SUPER+SHIFT+S { move-column-to-workspace-down; };\n    SUPER+SHIFT+W { move-column-to-workspace-up; };\n\n    SUPER+WHEELSCROLLRIGHT { focus-column-right; };\n    SUPER+WHEELSCROLLLEFT { focus-column-left; };\n    SUPER+CTRL+WHEELSCROLLRIGHT { move-column-right; };\n    SUPER+CTRL+WHEELSCROLLLEFT { move-column-left; };\n\n    SUPER+SHIFT+WHEELSCROLLDOWN { focus-column-right; };\n    SUPER+SHIFT+WHEELSCROLLUP { focus-column-left; };\n    SUPER+CTRL+SHIFT+WHEELSCROLLDOWN { move-column-right; };\n    SUPER+CTRL+SHIFT+WHEELSCROLLUP { move-column-left; };\n\n    SUPER+1 { focus-workspace 1; };\n    SUPER+2 { focus-workspace 2; };\n    SUPER+3 { focus-workspace 3; };\n    SUPER+4 { focus-workspace 4; };\n    SUPER+5 { focus-workspace 5; };\n    SUPER+6 { focus-workspace 6; };\n    SUPER+7 { focus-workspace 7; };\n    SUPER+8 { focus-workspace 8; };\n    SUPER+9 { focus-workspace 9; };\n\n    CTRL+SHIFT+1 { move-column-to-workspace 1; };\n    CTRL+SHIFT+2 { move-column-to-workspace 2; };\n    CTRL+SHIFT+3 { move-column-to-workspace 3; };\n    CTRL+SHIFT+4 { move-column-to-workspace 4; };\n    CTRL+SHIFT+5 { move-column-to-workspace 5; };\n    CTRL+SHIFT+6 { move-column-to-workspace 6; };\n    CTRL+SHIFT+7 { move-column-to-workspace 7; };\n    CTRL+SHIFT+8 { move-column-to-workspace 8; };\n    CTRL+SHIFT+9 { move-column-to-workspace 9; };\n\n    SUPER+TAB { focus-workspace-previous; };\n\n    // Layout Controls //\n\n    SUPER+CTRL+X { expand-column-to-available-width; };\n    SUPER+C { center-column; };\n    SUPER+CTRL+C { center-visible-columns; };\n    SUPER+CTRL+A { set-column-width \"-3%\"; };\n    SUPER+CTRL+D { set-column-width \"+3%\"; };\n    SUPER+CTRL+S { set-window-height \"-3%\"; };\n    SUPER+CTRL+W { set-window-height \"+3%\"; };\n\n    // moniter controls, left out bc not using tv anymore. 21.12.25. \n\n    // SUPER+SHIFT+CTRL+A { move-column-to-monitor-left; };\n    // SUPER+SHIFT+CTRL+S { move-column-to-monitor-right; };\n    // SUPER+SHIFT+CTRL+UP { move-column-to-monitor-up; };\n    // SUPER+SHIFT+CTRL+DOWN { move-column-to-monitor-down; };\n    // SUPER+TAB { focus-monitor-left; }; // \n    // SUPER+Q { focus-monitor-right; }; // \n \n    // Modes //\n\n    SUPER+T { toggle-window-floating; };\n    SUPER+F { fullscreen-window; };\n    SUPER+Z { toggle-column-tabbed-display; };\n\n    // Screenshots //\n\n    SUPER+F7 { screenshot; };\n    SUPER+F6 { screenshot-window; };\n    SUPER+F8 { screenshot-screen; };\n\n\n    // Emergency Escape Key //\n\n    // SUPER+ESCAPE allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; };\n\n    // Exit / Power //\n\n    CTRL+ALT+DELETE { quit; }; // Also quits Niri\n    SUPER+SHIFT+P { power-off-monitors; };\n    ALT+SHIFT+S repeat=false { toggle-overview; };\n \n   }\n\n//  Startup Applications  //\n\nspawn-sh-at-startup \"/usr/lib/polkit-kde-authentication-agent-1 &\";\nspawn-at-startup \"wl-paste\" \"--watch\" \"cliphist\" \"store\"\nspawn-at-startup \"wl-paste\" \"--pwl-pasterimary\" \"--watch\" \"cliphist\" \"store\"  \nscreenshot-path \"~/Pictures/Screenshots/%d.%m.%Y %I:%M %p.png\"\nspawn-at-startup \"qs\" \"-c\" \"noctalia-shell\"\nspawn-sh-at-startup \"pkill mako\"\nspawn-sh-at-startup \"niri-screen-time -daemon\"\n\n// Layout Settings //\n\noverview {\n\tzoom 0.3333\n\tbackdrop-color \"#141414\"\n}\n\nlayout {\n    gaps 3; // Gap between windows\n    center-focused-column \"never\";\n    background-color \"transparent\"\n\n    preset-column-widths {\n        proportion 0.3333;\n        proportion 0.5;\n        proportion 0.6667; };\n\n    focus-ring {\n        width 3;\n        active-color \"#C0C0C0\";\n    //     inactive-color \"#a7b3e5\";\n    };\n\n    shadow {\n        softness 30;\n        spread 5;\n        offset x=0 y=5;\n        color \"#0007\";\n    };\n    \n     default-column-width { proportion 0.3333; }\n  tab-indicator {\n        place-within-column\n        width 5\n    };\n\n    always-center-single-column\n    struts {};\n};\n\n//  Animation Settings //\n\nanimations {\n\nslowdown 1.85\n    \nwindow-resize {\n        spring damping-ratio=0.67 stiffness=37 epsilon=0.00001\n    }\n\n    screenshot-ui-open {\n    duration-ms 800\n    curve \"ease-out-expo\"\n    }\n\n    overview-open-close {\n        spring damping-ratio=0.77 stiffness=90 epsilon=0.0001\n    }\n\n    window-movement {\n        spring damping-ratio=0.82 stiffness=65 epsilon=0.0001\n    }\n\n    workspace-switch {\n        spring damping-ratio=0.82 stiffness=160 epsilon=0.0001\n    }\n\n    horizontal-view-movement {\n         spring damping-ratio=0.75 stiffness=45 epsilon=0.0001\n    }\n\n    window-open {\n        duration-ms 1000\n        curve \"ease-out-expo\"\n        custom-shader \"vec4 fall_from_top(vec3 coords_geo, vec3 size_geo) {\n            float progress = niri_clamped_progress * niri_clamped_progress;\n            vec2 coords = (coords_geo.xy - vec2(0.5, 0.0)) * size_geo.xy;\n            coords.y += (1.0 - progress) * 1440.0;\n            float random = (niri_random_seed - 0.5) / 2.0;\n            random = sign(random) - random;\n            float max_angle = 0.5 * random;\n            float angle = (1.0 - progress) * max_angle;\n            mat2 rotate = mat2(cos(angle), -sin(angle), sin(angle), cos(angle));\n            coords = rotate * coords;\n            coords_geo = vec3(coords / size_geo.xy + vec2(0.5, 0.0), 1.0);\n            vec3 coords_tex = niri_geo_to_tex * coords_geo;\n            return texture2D(niri_tex, coords_tex.st); \n        }\n        vec4 open_color(vec3 coords_geo, vec3 size_geo) {\n            return fall_from_top(coords_geo, size_geo);\n        }\"\n    }\n    \n\n    // Original by Lemmy: https://github.com/ItsLemmy\n\n    window-close {\n      duration-ms 800\n      curve \"linear\"\n      custom-shader r\"\n        vec4 fall_and_rotate(vec3 coords_geo, vec3 size_geo) {\n          float progress = niri_clamped_progress * niri_clamped_progress;\n          vec2 coords = (coords_geo.xy - vec2(0.5, 1.0)) * size_geo.xy;\n          coords.y -= progress * 1440.0;\n          float random = (niri_random_seed - 0.5) / 2.0;\n          random = sign(random) - random;\n          float max_angle = 0.5 * random;\n          float angle = progress * max_angle;\n          mat2 rotate = mat2(cos(angle), -sin(angle), sin(angle), cos(angle));\n          coords = rotate * coords;\n          coords_geo = vec3(coords / size_geo.xy + vec2(0.5, 1.0), 1.0);\n          vec3 coords_tex = niri_geo_to_tex * coords_geo;\n          vec4 color = texture2D(niri_tex, coords_tex.st);\n          color.a *= (1.0 - progress);\n\n          return color;\n        }\n        vec4 close_color(vec3 coords_geo, vec3 size_geo) {\n          return fall_and_rotate(coords_geo, size_geo);\n        }\n      \"\n    }\n}\n\n//  Window Rules  //\n\nwindow-rule {\n    geometry-corner-radius 3;\n    clip-to-geometry true; \n}\n\nwindow-rule {\n    match app-id=\"foot\"\n    match app-id=\"Alacritty\"\n    match app-id=\"kitty\"\n    opacity 0.78\n}\n\nwindow-rule {\n    match app-id=\"org.gnome.Nautilus\"\n    match app-id=\"org.gnome.Calculator\"\n    default-column-width { proportion 0.18; };\n}\n\nwindow-rule {\n    match app-id=\"ONLYOFFICE\"\n    default-column-width { proportion 0.5; };\n}\n\nwindow-rule {\n    match app-id=\"org-springframework-boot-loader-PropertiesLauncher\"\n    match app-id=r#\"firefox$\"# title=\"^Picture-in-Picture$\";\n    open-floating true\n}\n\nwindow-rule {\n    match title=\"Properties\" app-id=\"org.gnome.Nautilus\"\n    open-floating false\n    exclude app-id=\"org.gnome.NautilusPreviewer\"\n    default-column-width { proportion 0.15; };\n}\n\nwindow-rule {\n    match app-id=\"zen\"\n    match app-id=\"loupe\"\n    match title=\"Open\"\n    match app-id=\"soffice\"\n    match title=\"Rename Multiple Files\"\n    match app-id=\"Steam\"\n    exclude title=\"Sign in to Steam\"\n    open-floating false\n}\n\nwindow-rule {\n    open-maximized false\n    open-maximized-to-edges false\n}\n\n\n// wallpaper in overview //\n\nlayer-rule {\n  match namespace=\"^noctalia-overview*\"\n  place-within-backdrop true\n}\n\n//  Environment Variables  //\n\nenvironment {\n    DISPLAY \":1\";\n    ELECTRON_OZONE_PLATFORM_HINT \"auto\";\n    QT_QPA_PLATFORM \"wayland\";\n    QT_WAYLAND_DISABLE_WINDOWDECORATION \"1\";\n    XDG_SESSION_TYPE \"wayland\";\n    XDG_CURRENT_DESKTOP \"niri\";\n};\n\nhotkey-overlay {\n    skip-at-startup;\n};\n\ncursor {\n    xcursor-theme \"ComixCursors-Black\"\n    xcursor-size 40\n}\n\ndebug {\n        honor-xdg-activation-with-invalid-serial\n            }\n\ninclude \"./noctalia.kdl\"",
+					"file": "/home/chriz/.config/niri/config.kdl",
+					"file_size": 13347,
+					"file_write_time": 134141637249772590,
+					"settings":
+					{
+						"buffer_size": 13347,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+			],
+			"find":
+			{
+				"height": 0.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/chriz/.config/niri/config.kdl",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 13347,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1,
+										1
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,0,0,951,1033,1920,1080",
+			"project": "",
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

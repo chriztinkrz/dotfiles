@@ -1,0 +1,7 @@
+[manager]
+# Open the file with system opener
+keymap = [
+  { on = ["enter"],      run = "open" },
+  { on = ["l"],          run = "open" },
+  { on = ["right"],      run = "open" }
+]

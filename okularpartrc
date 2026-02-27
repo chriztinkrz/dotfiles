@@ -1,0 +1,6 @@
+[Main View]
+ShowLeftPanel=false
+
+[Document]
+RenderMode=InvertLightness
+

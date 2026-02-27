@@ -1,0 +1,14 @@
+2026/01/10-12:49:06.509 1e9a95 Reusing MANIFEST /home/chriz/.config/Upscayl/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2026/01/10-12:49:06.510 1e9a95 Recovering log #110
+2026/01/10-12:49:06.510 1e9a95 Reusing old log /home/chriz/.config/Upscayl/IndexedDB/file__0.indexeddb.leveldb/000110.log 
+2026/01/10-12:49:06.510 1e9a95 Delete type=2 #108
+2026/01/10-12:49:06.874 1e9b51 Level-0 table #115: started
+2026/01/10-12:49:06.877 1e9b51 Level-0 table #115: 621 bytes OK
+2026/01/10-12:49:06.882 1e9b51 Delete type=0 #110
+2026/01/10-12:49:06.882 1e9b50 Manual compaction at level-0 from '\x00\x1e\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1f\x00\x00\x00' @ 0 : 0; will stop at '\x00\x1e\x00\x00\x05' @ 723 : 1
+2026/01/10-12:49:06.882 1e9b50 Compacting 1@0 + 1@1 files
+2026/01/10-12:49:06.884 1e9b50 Generated table #116@0: 39 keys, 1227 bytes
+2026/01/10-12:49:06.884 1e9b50 Compacted 1@0 + 1@1 files => 1227 bytes
+2026/01/10-12:49:06.888 1e9b50 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/01/10-12:49:06.889 1e9b50 Delete type=2 #115
+2026/01/10-12:49:06.889 1e9b50 Manual compaction at level-0 from '\x00\x1e\x00\x00\x05' @ 723 : 1 .. '\x00\x1f\x00\x00\x00' @ 0 : 0; will stop at (end)

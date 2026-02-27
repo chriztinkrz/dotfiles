@@ -1,0 +1,133 @@
+13:25:23.468: Platform: Wayland
+13:25:23.468: CPU Name: AMD Ryzen 7 PRO 5850U with Radeon Graphics
+13:25:23.468: CPU Speed: 1858.214MHz
+13:25:23.469: Physical Cores: 8, Logical Cores: 16
+13:25:23.469: Physical Memory: 15290MB Total, 2457MB Free
+13:25:23.469: Kernel Version: Linux 6.18.2-2-cachyos
+13:25:23.469: Distribution: "CachyOS Linux" Unknown
+13:25:23.469: Desktop Environment: niri (niri)
+13:25:23.469: Session Type: wayland
+13:25:23.471: Current Date/Time: 2025-12-24, 13:25:23
+13:25:23.471: Browser Hardware Acceleration: true
+13:25:23.471: Qt Version: 6.10.1 (runtime), 6.10.0 (compiled)
+13:25:23.471: Portable mode: false
+13:25:23.546: OBS 32.0.2 (linux)
+13:25:23.546: ---------------------------------
+13:25:23.548: ---------------------------------
+13:25:23.548: audio settings reset:
+13:25:23.548: 	samples per sec: 48000
+13:25:23.548: 	speakers:        2
+13:25:23.548: 	max buffering:   960 milliseconds
+13:25:23.548: 	buffering type:  dynamically increasing
+13:25:23.551: ---------------------------------
+13:25:23.551: Initializing OpenGL...
+13:25:23.551: Using EGL/Wayland
+13:25:23.614: Initialized EGL 1.5
+13:25:23.640: Loading up OpenGL on adapter AMD AMD Radeon Graphics (radeonsi, renoir, ACO, DRM 3.64, 6.18.2-2-cachyos)
+13:25:23.640: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 25.3.2-arch1.2, shading language 4.60
+13:25:23.869: ---------------------------------
+13:25:23.869: video settings reset:
+13:25:23.869: 	base resolution:   1920x1080
+13:25:23.869: 	output resolution: 1920x1080
+13:25:23.869: 	downscale filter:  Bicubic
+13:25:23.869: 	fps:               60/1
+13:25:23.869: 	format:            NV12
+13:25:23.869: 	YUV mode:          Rec. 709/Partial
+13:25:23.870: NV12 texture support enabled
+13:25:23.870: P010 texture support not available
+13:25:23.875: Audio monitoring device:
+13:25:23.875: 	name: Default
+13:25:23.875: 	id: default
+13:25:23.878: ---------------------------------
+13:25:23.880: Failed to load 'en-US' text for module: 'decklink-captions.so'
+13:25:23.883: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+13:25:23.885: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+13:25:23.885: Failed to initialize module 'decklink.so'
+13:25:24.069: [pipewire] Available capture sources:
+13:25:24.069: [pipewire]     - Monitor source
+13:25:24.069: [pipewire]     - Window source
+13:25:24.133: VAAPI: API version 1.22
+13:25:24.134: FFmpeg VAAPI H264 encoding supported
+13:25:24.141: FFmpeg VAAPI AV1 encoding not supported
+13:25:24.149: FFmpeg VAAPI HEVC encoding supported
+13:25:24.159: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+13:25:24.159: 
+13:25:24.159: NVENC not supported
+13:25:24.159: Failed to initialize module 'obs-nvenc.so'
+13:25:24.218: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.6.3 | RPC Version: 1)
+13:25:24.218: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.0 | Qt version (run-time): 6.10.1
+13:25:24.218: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+13:25:24.224: [obs-websocket] [obs_module_load] Module loaded.
+13:25:24.232: ---------------------------------
+13:25:24.232:   Loaded Modules:
+13:25:24.232:     text-freetype2.so
+13:25:24.232:     rtmp-services.so
+13:25:24.232:     obs-x264.so
+13:25:24.232:     obs-websocket.so
+13:25:24.232:     obs-webrtc.so
+13:25:24.232:     obs-vst.so
+13:25:24.232:     obs-transitions.so
+13:25:24.232:     obs-qsv11.so
+13:25:24.232:     obs-outputs.so
+13:25:24.232:     obs-libfdk.so
+13:25:24.232:     obs-filters.so
+13:25:24.232:     obs-ffmpeg.so
+13:25:24.232:     linux-v4l2.so
+13:25:24.232:     linux-pulseaudio.so
+13:25:24.232:     linux-pipewire.so
+13:25:24.232:     linux-jack.so
+13:25:24.232:     linux-capture.so
+13:25:24.232:     linux-alsa.so
+13:25:24.232:     image-source.so
+13:25:24.232:     frontend-tools.so
+13:25:24.232:     decklink-output-ui.so
+13:25:24.232:     decklink-captions.so
+13:25:24.232: ---------------------------------
+13:25:24.233: ---------------------------------
+13:25:24.233: Available Encoders:
+13:25:24.233:   Video Encoders:
+13:25:24.233: 	- ffmpeg_svt_av1 (SVT-AV1)
+13:25:24.233: 	- ffmpeg_aom_av1 (AOM AV1)
+13:25:24.233: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+13:25:24.233: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+13:25:24.233: 	- obs_x264 (x264)
+13:25:24.233:   Audio Encoders:
+13:25:24.233: 	- ffmpeg_aac (FFmpeg AAC)
+13:25:24.233: 	- ffmpeg_opus (FFmpeg Opus)
+13:25:24.233: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+13:25:24.233: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+13:25:24.233: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+13:25:24.233: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+13:25:24.233: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+13:25:24.233: 	- libfdk_aac (libfdk AAC)
+13:25:24.233: ==== Startup complete ===============================================
+13:25:24.276: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+13:25:24.276: All scene data cleared
+13:25:24.276: ------------------------------------------------
+13:25:24.284: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+13:25:24.285: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+13:25:24.285: pulse-input: Started recording from 'alsa_output.pci-0000_04_00.6.analog-stereo.monitor'
+13:25:24.285: [Loaded global audio device]: 'Desktop Audio'
+13:25:24.285: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+13:25:24.285: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+13:25:24.285: pulse-input: Started recording from 'alsa_input.pci-0000_04_00.6.analog-stereo' (default)
+13:25:24.286: [Loaded global audio device]: 'Mic/Aux'
+13:25:24.286: PipeWire initialized
+13:25:24.286: pulse-input: Server name: 'PulseAudio (on PipeWire 1.4.9) 15.0.0'
+13:25:24.287: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+13:25:24.287: pulse-input: Started recording from 'bluez_output.B8_D5_0B_92_66_97.1.monitor' (default)
+13:25:24.288: Switched to scene 'Scene'
+13:25:24.289: ------------------------------------------------
+13:25:24.289: Loaded scenes:
+13:25:24.289: - scene 'Scene':
+13:25:24.289:     - source: 'Screen Capture (PipeWire)' (pipewire-screen-capture-source)
+13:25:24.289:     - source: 'Audio Output Capture (PulseAudio)' (pulse_output_capture)
+13:25:24.289: ------------------------------------------------
+13:25:24.295: Device for 'Audio Output Capture' source is also used for audio monitoring:
+13:25:24.295: Deduplication logic is being applied to all monitored sources.
+13:25:24.295: 
+13:25:24.389: [pipewire] Screencast session created
+13:25:24.396: [pipewire] Asking for monitor and window
+13:25:24.871: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Desktop Audio)
+13:25:24.871: 
+13:25:25.592: [pipewire] Failed to start screencast, denied or cancelled by user

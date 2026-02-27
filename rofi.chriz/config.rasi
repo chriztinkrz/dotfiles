@@ -1,0 +1,13 @@
+@theme "theme"
+configuration {
+    kb-mode-next: "Shift+Right";
+    kb-mode-previous: "Shift+Left"; 
+    modes: "window,drun,calc";
+    disable-history: true;
+    matching: "prefix";
+    sort: true;
+    sorting-method: "fzf";
+    show-icons: true;
+    /* show: "drun"; */
+    /* You can also set the default mode to show on launch */
+}
