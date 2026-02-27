@@ -80,7 +80,7 @@ binds {
     // rofi stuff //
     SUPER+V hotkey-overlay-title="rofi-cliphist" { spawn "~/.config/rofi/scripts/clipboard.sh"; }; // requires cliphist
     SUPER+SHIFT+V hotkey-overlay-title="rofi-emoji" { spawn-sh "rofi -modi emoji -show emoji -theme-str 'listview {lines: 10;}' -theme-str 'window {width: 30%;}'"; }; // requires rofi-emoji
-    SUPER+Escape { spawn-sh "rofi-power"; }; // sudo cp ~/.config/rofi/scripts/rofi-power-menu -r /usr/bin
+    SUPER+Escape { spawn-sh "rofi-power"; };
     SUPER+SHIFT+C { spawn-sh "rofi -show calc -theme-str 'window { width: 15%; }' -theme-str 'listview {lines: 1;}'"; }; // requires rofi-calc
     // ALT+TAB { spawn-sh "rofi -show window -theme-str 'window { width: 62%; }' -theme-str 'listview {lines: 15;}'"; };
     SUPER+SHIFT+B { spawn-sh "~/.config/rofi/scripts/rofi-bluetooth-claude.sh"; };

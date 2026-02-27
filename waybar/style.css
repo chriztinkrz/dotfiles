@@ -48,7 +48,7 @@ window#waybar.empty #window {
 }
 
 .modules-right {
-  margin: 0px 353px 0 0;
+  margin: 0px 352px 0 0;
   padding: 0 0px;
 
   background-color: @focused;
@@ -100,7 +100,7 @@ button {
 #battery,
 #pulseaudio,
 #backlight {
-  min-width: 127.0px;
+  min-width: 133.1px;
 }
 
 #workspaces {
@@ -112,8 +112,8 @@ button {
 }
 
 #custom-music {
-  padding-left: 7px;
-  padding-right: 4.5px;
+  padding-left: 4px;
+  padding-right: 5px;
 }
 
 #mpris {
@@ -121,7 +121,7 @@ button {
 }
 
 #cpu {
-  padding-right: 2px;
+  padding-right: 0px;
   padding-left: 0px;
 }
 
