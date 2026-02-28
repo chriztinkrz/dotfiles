@@ -94,8 +94,8 @@ binds {
     // other stuff to escape quickshell
     SUPER+L allow-when-locked=true { spawn "hyprlock"; };
     SUPER+N { spawn-sh "makoctl dismiss -a"; };
-    SUPER+F5 { spawn-sh "gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/$(date +%d.%m.%Y_%I:%M%p).mp4"; };
-    SUPER+F4 { spawn-sh "pkill -INT -f gpu-screen-recorder"; };
+    SUPER+F5 { spawn-sh "gpu-screen-recorder -w screen -f 60 -fm cfr -k h264 -c mp4 -a $(pactl get-default-sink).monitor -o ~/Videos/$(date +%d.%m.%Y_%I:%M%p).mp4 & notify-send 'recording started'"; };
+    SUPER+F4 { spawn-sh "pkill -INT -f gpu-screen-recorder && notify-send 'recording stopped'"; };
 
 
 
