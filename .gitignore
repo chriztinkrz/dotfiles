@@ -190,8 +190,6 @@ zathura/
 
 .dmenurc
 
-.gitignore
-
 .gsd-keyboard.settings-ported
 
 EOS-greeter.conf
@@ -287,3 +285,13 @@ user-dirs.locale
 yin_yang_dev.json
 
 zen/
+
+sublime-text/
+
+dconf/
+
+Upscayl/
+
+pulse/
+
+qalculate/
