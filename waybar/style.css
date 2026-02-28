@@ -72,10 +72,10 @@ button {
   border-radius: 4;
 }
 
-#workspaces button:hover {
+/*  #workspaces button:hover {
   color: @secondary_text;
   background-color: @focused2;
-}
+} */
 
 #workspaces button.active {
   color: @focused2;

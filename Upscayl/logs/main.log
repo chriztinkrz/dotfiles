@@ -1,0 +1,15 @@
+[2026-02-28 15:40:54.536] [info]  🆙 Upscayl version: 2.15.0 FOSS
+[2026-02-28 15:40:54.542] [info]  🚀 UPSCAYL EXEC PATH:  /home/chriz/.cache/appimage-run/6459457e589bcb99e779ea442dce608bacda33916b7019a8862b7c6252aa8229/resources/bin/upscayl-bin
+[2026-02-28 15:40:54.543] [info]  🚀 MODELS PATH:  /home/chriz/.cache/appimage-run/6459457e589bcb99e779ea442dce608bacda33916b7019a8862b7c6252aa8229/resources/models
+[2026-02-28 15:40:54.544] [info]  🚃 App Path:  /home/chriz/.cache/appimage-run/6459457e589bcb99e779ea442dce608bacda33916b7019a8862b7c6252aa8229/resources/app.asar
+[2026-02-28 15:40:55.454] [info]  💻 System Info: {"platform":"linux","release":"6.18.13","arch":"x64","model":"AMD Ryzen 5 PRO 4650U with Radeon Graphics","cpuCount":12,"gpu":{"active":true,"cudaComputeCapabilityMajor":0,"deviceId":5686,"gpuPreference":0,"vendorId":4098}}
+[2026-02-28 15:44:31.613] [info]  🆙 Upscayl version: 2.15.0 FOSS
+[2026-02-28 15:44:31.644] [info]  🚀 UPSCAYL EXEC PATH:  /nix/store/frmciklbspkxm50y3plmjjpc8say1lkf-upscayl-2.15.0-extracted/resources/bin/upscayl-bin
+[2026-02-28 15:44:31.645] [info]  🚀 MODELS PATH:  /nix/store/frmciklbspkxm50y3plmjjpc8say1lkf-upscayl-2.15.0-extracted/resources/models
+[2026-02-28 15:44:31.646] [info]  🚃 App Path:  /nix/store/frmciklbspkxm50y3plmjjpc8say1lkf-upscayl-2.15.0-extracted/resources/app.asar
+[2026-02-28 15:44:33.559] [info]  💻 System Info: {"platform":"linux","release":"6.18.13","arch":"x64","model":"AMD Ryzen 5 PRO 4650U with Radeon Graphics","cpuCount":12,"gpu":{"active":true,"cudaComputeCapabilityMajor":0,"deviceId":5686,"gpuPreference":0,"vendorId":4098}}
+[2026-02-28 15:46:43.938] [info]  🆙 Upscayl version: 2.15.0 FOSS
+[2026-02-28 15:46:43.944] [info]  🚀 UPSCAYL EXEC PATH:  /home/chriz/.cache/appimage-run/6459457e589bcb99e779ea442dce608bacda33916b7019a8862b7c6252aa8229/resources/bin/upscayl-bin
+[2026-02-28 15:46:43.946] [info]  🚀 MODELS PATH:  /home/chriz/.cache/appimage-run/6459457e589bcb99e779ea442dce608bacda33916b7019a8862b7c6252aa8229/resources/models
+[2026-02-28 15:46:43.949] [info]  🚃 App Path:  /home/chriz/.cache/appimage-run/6459457e589bcb99e779ea442dce608bacda33916b7019a8862b7c6252aa8229/resources/app.asar
+[2026-02-28 15:46:45.146] [info]  💻 System Info: {"platform":"linux","release":"6.18.13","arch":"x64","model":"AMD Ryzen 5 PRO 4650U with Radeon Graphics","cpuCount":12,"gpu":{"active":true,"cudaComputeCapabilityMajor":0,"deviceId":5686,"gpuPreference":0,"vendorId":4098}}

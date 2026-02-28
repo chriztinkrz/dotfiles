@@ -117,7 +117,7 @@ binds {
 
     // applications //
     SUPER+RETURN hotkey-overlay-title="Open Terminal: foot" { spawn-sh "foot"; };
-    SUPER+B hotkey-overlay-title="Open Browser: zen" { spawn-sh "flatpak run app.zen_browser.zen"; };
+    SUPER+B hotkey-overlay-title="Open Browser: zen" { spawn-sh "zen-beta"; };
     SUPER+E hotkey-overlay-title="File Manager: nautilus" { spawn-sh "nautilus --new-window"; };
 
 
@@ -338,7 +338,7 @@ window-resize {
 
 //  window rules  //
 window-rule {
-    geometry-corner-radius 3;
+    geometry-corner-radius 4;
     clip-to-geometry true; 
 }
 window-rule {
