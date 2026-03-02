@@ -97,10 +97,12 @@ button {
 
 /* module general styles */
 
-#battery,
-#pulseaudio,
-#backlight {
-  min-width: 133.1px;
+#wireplumber {
+  min-width: 172px;
+}
+
+#battery {
+  min-width: 165px;
 }
 
 #workspaces {
@@ -113,11 +115,12 @@ button {
 
 #custom-music {
   padding-left: 4px;
-  padding-right: 5px;
+  padding-right: 4.99px;
 }
 
 #mpris {
-  padding-left: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 #cpu {

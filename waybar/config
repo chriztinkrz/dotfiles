@@ -84,8 +84,8 @@
     },
 
 "battery": {
-    "min-length": 13,
-    "max-length": 13,
+    "min-length": 5,
+    "max-length": 5,
     "states": {
         "warning": 30,
         "critical": 15
@@ -102,8 +102,8 @@
 
 "backlight": {
     "device": "amdgpu_bl",
-    "min-length": 13,
-    "max-length": 13,
+    "min-length": 6,
+    "max-length": 6,
     "on-scroll-up": "lightctl up",
     "on-scroll-down": "lightctl down",
     "format": "{icon}  {percent}%",
@@ -112,14 +112,15 @@
 
 "wireplumber": {
     "format": "  {volume}%",
-    "min-length": 13,
-    "max-length": 13,
+    "min-length": 6,
+    "max-length": 6,
     "on-scroll-up": "volumectl -u up",
     "on-scroll-down": "volumectl -u down",
     "format-muted": " ",
     /* "format-icons": {
         "default": ["", "", ""] // Volume levels
     }, */
+    "on-click": "~/.config/rofi/scripts/select-audio.sh",
 },
 
 "custom/cava": {
