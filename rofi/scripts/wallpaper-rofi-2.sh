@@ -42,13 +42,40 @@ fi
 # --- 3. LAUNCH ROFI ---
 last_row=$(($(wc -l < "$CACHE_FILE") - 1))
 chosen=$(awk -F'|' '{printf "%s\0icon\x1f%s\n", $1, $2}' "$CACHE_FILE" | \
-    rofi -dmenu -i -show-icons -selected-row "$last_row" -theme-str '
-window { width: 97.5%; location: south; anchor: south; margin: 10px; }
-listview { lines: 1; columns: 10; fixed-height: true; }
-element { orientation: vertical; children: [ element-icon ]; }
-element-icon { size: 175px; horizontal-align: 0.5; }
-element-text { enabled: false; }
-inputbar { enabled: false; }
+    rofi -dmenu -i \
+    -selected-row "$last_row" \
+    -show-icons \
+    -kb-move-char-back 'Ctrl+Z'\
+    -kb-move-char-forward 'Ctrl+X' \
+    -kb-row-up 'Left' \
+    -kb-row-down 'Right' \
+    -theme-str '
+    window { 
+    width: 97.5%; 
+    location: south; 
+    anchor: south; 
+    margin: 10px; 
+}
+    listview { 
+    lines: 1; 
+    columns: 10; 
+    fixed-height: true; 
+}
+    element { 
+    orientation: vertical; 
+    children: [ element-icon ]; 
+}
+    element-icon { 
+    size: 175px; 
+    horizontal-align: 0.5; 
+}
+    element-text { 
+    enabled: false; 
+}
+    inputbar { 
+    enabled: false; 
+} 
+
 ')
 
 # --- 4. EXECUTE SELECTION ---
