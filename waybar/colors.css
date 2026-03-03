@@ -1,13 +1,13 @@
 /* Base */
-@define-color foreground #e2e2e8;
-@define-color background #121317;
+@define-color foreground #eedfe0;
+@define-color background #191213;
 
 /* Accent */
-@define-color primary #abc7ff;
-@define-color primary_text #002f65;
-@define-color secondary #bac7e4;
-@define-color secondary_text #243148;
-@define-color tertiary #f2b1f2;
+@define-color primary #ffb2bf;
+@define-color primary_text #5a182a;
+@define-color secondary #edb9c1;
+@define-color secondary_text #48272d;
+@define-color tertiary #fabb5e;
 @define-color urgent #ffb4ab;
 
 /* --- compatibility with your old style.css --- */
@@ -19,4 +19,4 @@
 @define-color color1 @primary;
 @define-color color2 @secondary;
 @define-color color3 @tertiary;
-@define-color background2 #002f65;
+@define-color background2 #5a182a;
