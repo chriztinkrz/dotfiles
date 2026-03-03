@@ -40,9 +40,9 @@ if [ ! -f "$CACHE_FILE" ]; then
 fi
 
 # --- 3. LAUNCH ROFI ---
-# Removed -selected-row so it opens at the beginning
+last_row=$(($(wc -l < "$CACHE_FILE") - 1))
 chosen=$(awk -F'|' '{printf "%s\0icon\x1f%s\n", $1, $2}' "$CACHE_FILE" | \
-    rofi -dmenu -i -show-icons -theme-str '
+    rofi -dmenu -i -show-icons -selected-row "$last_row" -theme-str '
 window { width: 97.5%; location: south; anchor: south; margin: 10px; }
 listview { lines: 1; columns: 10; fixed-height: true; }
 element { orientation: vertical; children: [ element-icon ]; }

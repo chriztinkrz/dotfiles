@@ -1,15 +1,15 @@
 * {
     /* Using surface as the main background (subtle) */
-    background: #191213;
+    background: #121316;
     
     /* Text color for main background */
-    foreground: #eedfe0;
+    foreground: #e3e2e6;
     
     /* Primary accent for selected items */
-    accent: #ffb2bf;
+    accent: #aac8f6;
     
     /* Outline for borders */
-    muted: #a18c8e;
+    muted: #8d9199;
     
     font: "Inter 15";
     background-color: transparent;
@@ -39,12 +39,12 @@ element {
 
 /* Selected item gets the vibrant primary color background */
 element selected {
-    background-color: #ffb2bf;
-    text-color: #5a182a;
+    background-color: #aac8f6;
+    text-color: #0d3157;
 }
 
 element-text selected {
-    text-color: #5a182a;
+    text-color: #0d3157;
 }
 
 element-icon {
