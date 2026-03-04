@@ -86,7 +86,7 @@ binds {
     SUPER+SHIFT+B { spawn-sh "~/.config/rofi/scripts/rofi-bluetooth-claude.sh"; };
     ALT+CONTROL+S { spawn-sh "~/.config/rofi/scripts/select-audio.sh"; };
     SUPER+SPACE hotkey-overlay-title="Open App Launcher: rofi_drun" { spawn-sh "rofi -show drun -theme-str 'listview {lines: 10;}' -theme-str 'window {width: 17%;}'"; };
-    SUPER+GRAVE { spawn-sh "~/.config/rofi/scripts/wallpaper-rofi-2.sh"; };
+    SUPER+GRAVE { spawn-sh "~/.config/rofi/scripts/wallpaper-rofi.sh"; };
     SUPER+ALT+E { spawn-sh "~/.config/rofi/scripts/file-selector/rofi-file-selector.sh"; };
 
 

@@ -39,9 +39,14 @@ output_path = '~/.config/avizo/config.ini'
 
 [templates.hyprlock]
 input_path = '~/.config/matugen/templates/hyprlock.conf'
-output_path = '~/.config/hypr/colors.conf'
+output_path = '~/.config/hypr/hyprlock_colors.conf'
+post_hook = 'hyprctl reload'
 
 [templates.btop]
 input_path = '~/.config/matugen/templates/btop.theme'
 output_path = '~/.config/btop/themes/matugen.theme'
 post_hook =   'pkill -USR2 btop'
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland.conf'
+output_path = '~/.config/hypr/hyprland_colors.conf'
