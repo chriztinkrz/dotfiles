@@ -347,7 +347,7 @@ window-rule {
     match app-id="foot"
     match app-id="Alacritty"
     match app-id="kitty"
-    opacity 0.78
+    opacity 0.8
 }
 window-rule {
     match app-id="org.gnome.Nautilus"
@@ -470,4 +470,4 @@ debug {
             }
 
 prefer-no-csd
-include "../../.cache/hellwal/niri-colors.kdl"
+include "../../.cache/hellwal/niri.kdl"
