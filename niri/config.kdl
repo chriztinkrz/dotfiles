@@ -172,6 +172,8 @@ binds {
     // workspace switching //
     SUPER+W { focus-workspace-up; };
     SUPER+S { focus-workspace-down; };
+    SUPER+CONTROL+SHIFT+ALT+Z cooldown-ms=300 { focus-workspace-up; }; 
+    SUPER+CONTROL+SHIFT+ALT+X cooldown-ms=300 { focus-workspace-down; };
     SUPER+WheelScrollUp   cooldown-ms=160 { focus-workspace-up; }
     SUPER+WheelScrollDown cooldown-ms=160 { focus-workspace-down; }
     SUPER+1 { focus-workspace 1; };
