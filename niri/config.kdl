@@ -51,7 +51,7 @@ output "eDP-1" {
 
 
 //  startup applications  //
-spawn-at-startup "~/.config/niri/scripts/hyprlock_swww.sh"
+spawn-at-startup "~/.config/niri/scripts/startup_script.sh"
 // spawn-at-startup "hyprlock"
 spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &";
 // spawn-at-startup "swww-daemon"
@@ -86,7 +86,7 @@ binds {
     SUPER+SHIFT+B { spawn-sh "~/.config/rofi/scripts/rofi-bluetooth-claude.sh"; };
     ALT+CONTROL+S { spawn-sh "~/.config/rofi/scripts/select-audio.sh"; };
     SUPER+SPACE hotkey-overlay-title="Open App Launcher: rofi_drun" { spawn-sh "rofi -show drun -theme-str 'listview {lines: 10;}' -theme-str 'window {width: 17%;}'"; };
-    SUPER+GRAVE { spawn-sh "~/.config/rofi/scripts/wallpaper-rofi.sh"; };
+    SUPER+GRAVE { spawn-sh "~/.config/rofi/scripts/wallpaper-rofi-2.sh"; };
     SUPER+ALT+E { spawn-sh "~/.config/rofi/scripts/file-selector/rofi-file-selector.sh"; };
 
 
@@ -130,6 +130,8 @@ binds {
     F1 allow-when-locked=true { spawn-sh "playerctl previous"; };
     F2 allow-when-locked=true { spawn-sh "playerctl play-pause"; };
     F3 allow-when-locked=true { spawn-sh "playerctl next"; };
+    XF86AudioPlay allow-when-locked=true { spawn-sh "playerctl play-pause"; };
+
 
 
 
@@ -393,6 +395,10 @@ window-rule {
     default-column-width { fixed 1920; };
     default-window-height { fixed 400; };
 }
+window-rule {
+    match app-id=".blueman-manager-wrapped"
+    default-column-width { fixed 530; };
+}
 
 // noctalia wallpaper in overview //
 layer-rule {
@@ -462,5 +468,6 @@ cursor {
 debug {
         honor-xdg-activation-with-invalid-serial
             }
+
 prefer-no-csd
-include "./colors.kdl"
+include "../../.cache/hellwal/niri-colors.kdl"

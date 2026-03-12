@@ -1,0 +1,28 @@
+[color]
+
+# Use the terminal default background or a specific hex
+background = '#%%background%%'
+
+# Foreground will be your primary accent
+foreground = '#%%color2.hex%%'
+
+# Gradient mode: 1 = on
+gradient = 1
+
+# Vertical gradient (bottom to top)
+gradient_color_1 = '#%%color2.hex%%'
+gradient_color_2 = '#%%color3.hex%%'
+gradient_color_3 = '#%%color4.hex%%'
+gradient_color_4 = '#%%color5.hex%%'
+gradient_color_5 = '#%%color6.hex%%'
+gradient_color_6 = '#%%color10.hex%%'
+gradient_color_7 = '#%%color12.hex%%'
+gradient_color_8 = '#%%color14.hex%%'
+
+# Horizontal gradient (left to right) - set to 1 if you prefer this mode
+horizontal_gradient = 0
+horizontal_gradient_color_1 = '#%%color2.hex%%'
+horizontal_gradient_color_2 = '#%%color4.hex%%'
+horizontal_gradient_color_3 = '#%%color6.hex%%'
+horizontal_gradient_color_4 = '#%%color1.hex%%'
+horizontal_gradient_color_5 = '#%%color5.hex%%'

@@ -6,5 +6,5 @@ set -x OPENER "xdg-open"
 #end
 set -g fish_greeting
 
-# Created by `pipx` on 2026-01-11 10:13:10
-set PATH $PATH /home/chriz/.local/bin
+source ~/.cache/hellwal/variablesfish.fish
+sh ~/.cache/hellwal/terminal.sh

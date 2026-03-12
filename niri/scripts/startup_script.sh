@@ -20,12 +20,13 @@ waybar &
 
 # 5. Start swww daemons at the same time
 swww-daemon &
+swww-daemon -n overlay &
 
 # 6. Final initialization and transition
 # Give daemons a moment to open their sockets before sending the image
-sleep 0.5
-swww img "$HOME/.cache/current_wallpaper.png" --transition-type grow --transition-duration 2 &
-swww img -n overlay "$HOME/.cache/blurred_wallpaper.png" --transition-type grow --transition-duration 2 &
+# sleep 2
+# swww img "$HOME/.cache/current_wallpaper.png" --transition-type grow --transition-duration 2 &
+# swww img -n overlay "$HOME/.cache/blurred_wallpaper.png" --transition-type grow --transition-duration 2 &
 
 # Keep script alive until hyprlock is closed
 wait

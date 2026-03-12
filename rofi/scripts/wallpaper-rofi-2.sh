@@ -6,14 +6,14 @@ CACHE_FILE="$HOME/.cache/wall_rofi_list.txt"
 LOCK_FILE="/tmp/wall_gen.lock"
 mkdir -p "$THUMB_DIR"
 
-# --- 1. ATOMIC CACHE GENERATOR ---
+# --- 1. ATOMIC CACHE GENERATOR (Improved) ---
 generate_list() {
-    # Guard: Don't run if another instance is already generating
     if [ -f "$LOCK_FILE" ]; then return; fi
     touch "$LOCK_FILE"
 
     local tmp_cache="${CACHE_FILE}.tmp"
     
+    # We scan the directory fresh every time to ensure deleted files are gone
     find "$WALL_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -printf "%T@ %f\n" | \
     sort -n | \
     cut -d' ' -f2- | \
@@ -24,13 +24,17 @@ generate_list() {
         
         echo "$name|$thumb"
         
+        # Only generate the thumbnail if it's missing
         if [ ! -f "$thumb" ]; then
-            # Limits thumbnailing to 1 at a time to save CPU
             magick "$full_path" -thumbnail 300x300^ -gravity center -extent 300x300 "$thumb" >/dev/null 2>&1
         fi
     done > "$tmp_cache"
 
     mv "$tmp_cache" "$CACHE_FILE"
+
+    # OPTIONAL: Cleanup orphaned thumbnails (files in cache folder that aren't in the list)
+    # find "$THUMB_DIR" -type f -not -name "$(cut -d'|' -f2 "$CACHE_FILE" | xargs -I{} basename {})" -delete 2>/dev/null
+
     rm "$LOCK_FILE"
 }
 
@@ -84,7 +88,10 @@ if [ -n "$chosen" ]; then
     swww img "$full" --transition-type grow --transition-duration 2 &
     (
         ln -sf "$full" "$HOME/.cache/current_wallpaper.png"
-        matugen image "$full" --mode dark --type scheme-content --source-color-index 0
+        hellwal -i "$full"
+        pkill -USR1 cava
+        pkill -USR2 btop
+        makoctl reload
         blurred_wall="$HOME/.cache/blurred_wallpaper.png"
         magick "$full" -blur 0x5 "$blurred_wall"
         swww img -n overlay "$blurred_wall" --transition-type grow

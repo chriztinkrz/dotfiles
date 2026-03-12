@@ -1,4 +1,4 @@
-@import url("colors.css");
+@import '../../.cache/hellwal/waybar-colors.css';
 
 /* font declared */
 * {
@@ -29,8 +29,8 @@ window#waybar.empty #window {
   margin: 0px 0 0 350px;
   padding: 0 0px;
 
-  background-color: @focused;   /* primary fill */
-  color: @primary_text;
+  background-color: @color1;   /* primary fill */
+  color: @color15;
 
   border: none;
   border-radius: 4px;
@@ -40,8 +40,8 @@ window#waybar.empty #window {
   margin: 0px 0 0 0;
   padding: 0 0px;
 
-  background-color: @focused;
-  color: @primary_text;
+  background-color: @color1;
+  color: @color15;
 
   border: none;
   border-radius: 4px;
@@ -51,8 +51,8 @@ window#waybar.empty #window {
   margin: 0px 352px 0 0;
   padding: 0 0px;
 
-  background-color: @focused;
-  color: @primary_text;
+  background-color: @color1;
+  color: @color15;
 
   border: none;
   border-radius: 4px;
@@ -67,8 +67,8 @@ button {
 #workspaces button {
   min-width: 0;
   padding: 0 7px;
-  background-color: @focused;
-  color: @primary_text;
+  background-color: @color1;
+  color: @color15;
   border-radius: 4;
 }
 
@@ -78,8 +78,8 @@ button {
 } */
 
 #workspaces button.active {
-  color: @focused2;
-  background-color: @background2;
+  color: @color1;
+  background-color: @color15;
 }
 
 #workspaces button.urgent {
@@ -130,8 +130,8 @@ button {
 
 #battery.charging,
 #battery.plugged {
-  background-color: @focused ;
-  color: @primary_text;
+  background-color: @color1 ;
+  color: @color15;
   border-radius: 0 4px 4px 0;
 }
 
