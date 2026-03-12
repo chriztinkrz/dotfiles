@@ -7,6 +7,7 @@
     on-accent: #%%background%%;
     color15: #%%color15%%;
     color1: #%%color1%%;
+    color7: #%%color7%%;
 
     font: "Inter 15";
     background-color: transparent;
@@ -36,12 +37,12 @@ element {
 
 /* Selected item gets the vibrant primary color background */
 element selected {
-    background-color: @color1;
-    text-color: @color15;
+    background-color: @color7;
+    text-color: @color1;
 }
 
 element-text selected {
-    text-color: @color15;
+    text-color: @color1;
 }
 
 element-icon {
