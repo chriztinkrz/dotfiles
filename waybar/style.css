@@ -29,7 +29,7 @@ window#waybar.empty #window {
   margin: 0px 0 0 350px;
   padding: 0 0px;
 
-  background-color: @color1;   /* primary fill */
+  background-color: @color2;   /* primary fill */
   color: @color15;
 
   border: none;
@@ -40,7 +40,7 @@ window#waybar.empty #window {
   margin: 0px 0 0 0;
   padding: 0 0px;
 
-  background-color: @color1;
+  background-color: @color2;
   color: @color15;
 
   border: none;
@@ -51,7 +51,7 @@ window#waybar.empty #window {
   margin: 0px 352px 0 0;
   padding: 0 0px;
 
-  background-color: @color1;
+  background-color: @color2;
   color: @color15;
 
   border: none;
@@ -67,7 +67,7 @@ button {
 #workspaces button {
   min-width: 0;
   padding: 0 7px;
-  background-color: @color1;
+  background-color: @color2;
   color: @color15;
   border-radius: 4;
 }
@@ -130,7 +130,7 @@ button {
 
 #battery.charging,
 #battery.plugged {
-  background-color: @color1 ;
+  background-color: @color2 ;
   color: @color15;
   border-radius: 0 4px 4px 0;
 }
