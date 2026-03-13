@@ -2,7 +2,7 @@
 
 # Colors from 0-15
 printf "\033]4;0;#%%color0.hex%%\033\\"
-printf "\033]4;1;#%%color1.hex%%\033\\"
+printf "\033]4;3;#%%color14.hex%%\033\\"
 printf "\033]4;2;#%%color2.hex%%\033\\"
 printf "\033]4;3;#%%color3.hex%%\033\\"
 printf "\033]4;4;#%%color4.hex%%\033\\"

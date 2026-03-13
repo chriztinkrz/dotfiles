@@ -33,3 +33,6 @@ export FZF_DEFAULT_OPTS="
 
 # Fix LS_COLORS being unreadable.
 export LS_COLORS="$LS_COLORS:su=30;41:ow=30;42:st=30;44:"
+
+set -g fish_color_autosuggestion %%color7.hex%%
+set -g fish_color_error %%color15.hex%%
