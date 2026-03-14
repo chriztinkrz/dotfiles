@@ -85,7 +85,7 @@ chosen=$(awk -F'|' '{printf "%s\0icon\x1f%s\n", $1, $2}' "$CACHE_FILE" | \
 # --- 4. EXECUTE SELECTION ---
 if [ -n "$chosen" ]; then
     full="$WALL_DIR/$chosen"
-    swww img "$full" --transition-type grow --transition-duration 2 &
+    swww img "$full" --transition-type grow --transition-duration 1.75 &
     (
         ln -sf "$full" "$HOME/.cache/current_wallpaper.png"
         hellwal -i "$full"
@@ -93,7 +93,7 @@ if [ -n "$chosen" ]; then
         pkill -USR2 btop
         makoctl reload
         blurred_wall="$HOME/.cache/blurred_wallpaper.png"
-        magick "$full" -blur 0x5 "$blurred_wall"
+        magick "$full" -blur 0x"%[fx:w*0.002]" "$blurred_wall"
         swww img -n overlay "$blurred_wall" --transition-type grow
     ) &
 fi
