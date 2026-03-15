@@ -131,7 +131,6 @@ binds {
     F1 allow-when-locked=true { spawn-sh "playerctl previous"; };
     F2 allow-when-locked=true { spawn-sh "playerctl play-pause"; };
     F3 allow-when-locked=true { spawn-sh "playerctl next"; };
-    XF86AudioPlay allow-when-locked=true { spawn-sh "playerctl play-pause"; };
 
 
 
