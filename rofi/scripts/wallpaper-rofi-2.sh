@@ -55,7 +55,7 @@ chosen=$(awk -F'|' '{printf "%s\0icon\x1f%s\n", $1, $2}' "$CACHE_FILE" | \
     -kb-row-down 'Right' \
     -theme-str '
     window { 
-    width: 97.5%; 
+    width: 88%; 
     location: south; 
     anchor: south; 
     margin: 10px; 
