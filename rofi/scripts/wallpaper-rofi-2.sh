@@ -89,6 +89,7 @@ if [ -n "$chosen" ]; then
     (
         ln -sf "$full" "$HOME/.cache/current_wallpaper.png"
         hellwal -i "$full"
+        pkill -USR2 waybar
         pkill -USR1 cava
         pkill -USR2 btop
         makoctl reload
